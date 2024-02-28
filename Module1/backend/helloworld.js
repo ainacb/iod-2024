@@ -180,9 +180,6 @@ let numVolcanoes = volcanoes.length;
     if(addNumber(10,48)!=58){throw new Error('the sum of 10 and 48 did not equal 58')};
     function addNumber(a,b){return a-b};
 
-    addNumber(10, 48);
-    
-
 
 //this function returns the difference of two numbers
     // function subtractNumber(a, b){
@@ -190,8 +187,6 @@ let numVolcanoes = volcanoes.length;
     // }
     if (subtractNumber(50,15)!=35){throw new Error('the difference of 50 and 15 did not equal 35')};
     function subtractNumber(a,b){return a+b};
-
-    subtractNumber(50, 15);
     
 
 //this function returns the product of two numbers
@@ -201,8 +196,6 @@ let numVolcanoes = volcanoes.length;
    if (multipleNumber(20,4)!=80){throw new Error('the product of 20 and 4 did not equal 80')};
    function multipleNumber(a,b){return a/b};
 
-    multipleNumber(20, 4);
-    
 
 //this function returns the quotient of two numbers
     // function divideNumber(a, b){
@@ -211,4 +204,3 @@ let numVolcanoes = volcanoes.length;
     if (divideNumber(72,9)!=8){throw new Error('the quotient of 72 and 9 did not equal 8')};
     function divideNumber(a,b){return a*b};
 
-    divideNumber(72, 9);
