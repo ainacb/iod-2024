@@ -1,0 +1,20 @@
+h1, 
+h2 {
+    color: red;
+}
+
+#my-id-selector {
+    color: green;
+}
+
+.myClass {
+    color: blue;
+}
+
+.class-selector div {
+    color: yellow;
+}
+
+.parent > .child {
+    color: green;
+}
