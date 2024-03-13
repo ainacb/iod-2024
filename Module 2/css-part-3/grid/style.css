@@ -1,0 +1,79 @@
+:root {
+  --primary-color: #d6bf0e;
+  --secondary-color: #bfe938;
+  --border-1: solid 5px var(--secondary-color);
+  --spacing: 5px;
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  body {
+    background-color: lightblue;
+  }
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: pink;
+  }
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: auto auto auto; */
+  /* grid-template-columns: 1fr 3fr; */
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 5rem 1fr; */
+  /* height: 900px; */
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-Item {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+------------- :root {
+  --primary-color: #ffee77;
+  --secondary-color: #7700ff;
+  --border-1: solid 5px var(--secondary-color);
+  --border-2: solid 5px var(--primary-color);
+  --spacing: 5px;
+}
+/* Mobile first css */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+.grid-item {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+}
+/* Tablet media query */
+@media (min-width: 800px) and (max-width: 1200px) {
+  body {
+    background-color: red;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Desktop media query */
+@media (min-width: 1200px) {
+  body {
+    background-color: green;
+  }
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
