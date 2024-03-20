@@ -43,7 +43,7 @@ a {
 /* Add your answers here, do not modify the above CSS */
 .flex-container {
   display: flex;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
 }
 
 .flex-center {
@@ -68,9 +68,18 @@ a {
 
 .flex-menu {
   display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: left;
+}
 
-  /* justify-content: flex-end; */
-  align-content: center;
-  align-items: center;
-  flex-grow: 5;
+.flex-menu li {
+  list-style-type: none;
+  padding: 1em;
+  margin: 0 1px;
+}
+
+.flex-menu li a {
+  color: black;
+  font-weight: bold;
 }
