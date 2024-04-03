@@ -1,3 +1,4 @@
+// What are the results of these expressions? (answer first, then use console.log() to check
 // "" + 1 + 0; // 10
 // console.log("" + 1 + 0);
 // "" - 1 + 0; // -1
@@ -33,6 +34,7 @@
 // " \t \n" - 2; // -2
 // console.log(" \t \n" - 2);
 
+//Which of the below are not giving the right answer? Why are they not correct? How can we fix them?
 // let three = "3";
 // let four = "4";
 // let thirty = "30";
@@ -47,11 +49,22 @@
 // console.log(three - four);
 // let lessThan1 = three < four; // true
 // console.log(three < four);
-// let lessThan2 = thirty < four; // true
+// let lessThan2 = thirty < four; // true -- is not giving the right answer because t < f, use number to fix the number
 // console.log(thirty < four);
 
-if (0) console.log("#1 zero is true"); // is false because it is zero value
-if ("0") console.log("#2 zero is true"); // is true because it is a non-empty string
-if (null) console.log("null is true"); // is false bacause it has no value
-if (-1) console.log("negative is true"); // is true because it is a non-zero number
-if (1) console.log("positive is true"); // is true because it is a non-zero number
+// Which of the following console.log messages will print? Why?
+// if (0) console.log("#1 zero is true");  // is false because it is zero value
+// if ("0") console.log("#2 zero is true"); // is true because it is a non-empty string
+// if (null) console.log("null is true"); // is false bacause it has no value
+// if (-1) console.log("negative is true"); // is true because it is a non-zero number
+// if (1) console.log("positive is true"); // is true because it is a non-zero number
+
+// Rewrite this if using the ternary/conditional operator '?'. Test it with different values for a and b. What does the ‘+=’ do?
+let a = 2,
+  b = 3;
+let result = `${a} + ${b} is `;
+if (a + b < 10) {
+  result += "less than 10";
+} else {
+  result += "greater than 10";
+}
