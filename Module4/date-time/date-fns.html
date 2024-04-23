@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Date-fns DateTime Format</title>
+    <!-- reference date-fns library -->
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@3.6.0/cdn.min.js"></script>
+  </head>
+  <body>
+    <h2>Formatted Date using Date-fns</h2>
+    container for date-fns output
+    <div id="displayDateFns"></div>
+    <h2>JavaScript Date</h2>
+    container for JavaScript Date output
+    <div id="displayJsDate"></div>
+    <script type="text/javascript">
+      (function () {
+        // instantiate a JavaScript Date object
+        let nowDate = new Date();
+
+        // Format date using date-fns
+        let formattedDate = dateFns.format(nowDate, "PPPPpppp");
+
+        // display value of formatted date in #displayDateFns div
+        let eDisplayDateFns = document.getElementById("displayDateFns");
+        eDisplayDateFns.innerHTML = formattedDate;
+
+        // display value of Date object in #displayJsDate div
+        let eDisplayJsDate = document.getElementById("displayJsDate");
+        eDisplayJsDate.innerHTML = nowDate.toString();
+      })();
+    </script>
+
+    <p>Days between birthdate and the current date</p>
+    <div id="daysBirthToCurrent"></div>
+    <p>Years, months, and days between birthdate and current date</p>
+    <div id="yearsMonthDays"></div>
+    <p>Given two dates, display the date closest to the current date</p>
+    <p>
+      Given two dates, display whether the first date is before or after the
+      second date
+    </p>
+    <p>Display the current time in London</p>
+
+    <script>
+              function formatDistance<DateType extends Date>(
+        date: string | number | DateType,
+        baseDate: string | number | DateType,
+        options?: FormatDistanceOptions
+      ): string
+            const result = formatDistance(new Date(2014, 6, 2), new Date(2015, 0, 1));
+    </script>
+  </body>
+</html>
