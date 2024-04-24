@@ -16,9 +16,11 @@ at http://localhost:${port}`);
 // app.get("/", (req, res) => {
 //   res.send("Hello World!");
 // });
-
+app.use("express.json()");
 app.use("/mytest", testRoutes);
-
-app.use("/", express.static("public"));
-
 app.use("/calculator", calculatorRoutes);
+app.use("/", express.static("public"));
+// import all user routes (up top in index.js)
+const userRoutes = require("./routes/userRoutes");
+// map the user routes to our app
+app.use("/users", userRoutes);
